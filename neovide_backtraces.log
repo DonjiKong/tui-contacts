@@ -1,0 +1,48 @@
+2023-01-13 04:56:17 - Neovide panicked with the message 'Could not setup setting notifier for scale_factor: Error sending request 'nvim_command''. (File: src/error_handling.rs; Line: 5, Column: 5)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: start_thread
+             at ./nptl/pthread_create.c:442:8
+  15: clone3
+             at ./misc/../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+2023-01-13 04:56:18 - Neovide panicked with the message 'called `Result::unwrap()` on an `Err` value: SendError(Parallel(FocusLost))'. (File: src/event_aggregator.rs; Line: 55, Column: 28)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  22: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:392:3
+  23: <unknown>
+

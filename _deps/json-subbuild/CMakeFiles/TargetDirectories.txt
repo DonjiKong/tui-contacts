@@ -1,0 +1,3 @@
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/CMakeFiles/json-populate.dir
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/CMakeFiles/edit_cache.dir
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/CMakeFiles/rebuild_cache.dir

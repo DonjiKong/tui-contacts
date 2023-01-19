@@ -1,0 +1,13 @@
+# Target labels
+ ftxui-populate
+# Source files and their labels
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test.rule

@@ -1,0 +1,13 @@
+# Target labels
+ json-populate
+# Source files and their labels
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/CMakeFiles/json-populate
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/CMakeFiles/json-populate.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule
+/home/donji/Documents/cplusplus/ftxui-starter-master/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule
