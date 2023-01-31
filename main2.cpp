@@ -1,30 +1,48 @@
 #include <iostream>
-
-#include <memory>  // for allocator, __shared_ptr_access
-#include <string>  // for char_traits, operator+, string, basic_string
-#include <fstream>
-#include <functional>
-#include <vector>
-
 #include <nlohmann/json.hpp>
 
-#include "ftxui/component/captured_mouse.hpp"  // for ftxui
-#include "ftxui/component/component.hpp"       // for Input, Renderer, Vertical
-#include "ftxui/component/component_base.hpp"  // for ComponentBase
-#include "ftxui/component/component_options.hpp"  // for InputOption
-#include "ftxui/component/screen_interactive.hpp"  // for Component, ScreenInteractive
+#include <fstream>
+#include <string>
+#include <vector>
+#include <memory>
+#include <functional>
 
 #include "ftxui/dom/elements.hpp"
-
 #include "ftxui/screen/screen.hpp"
 #include "ftxui/screen/string.hpp"
+#include "ftxui/component/captured_mouse.hpp"
+#include "ftxui/component/screen_interactive.hpp"
 
-#include "ftxui/util/ref.hpp"  // for Ref
-
-
+#include "ftxui/component/component.hpp"
+#include "ftxui/component/component_base.hpp"
 
 
 using json = nlohmann::json;
+using namespace ftxui;
+
+
+// be able to categorize contacts
+enum tags
+{
+    red = 0,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple,
+};
+
+
+Component Wrap(std::string name, Component component) {
+  return Renderer(component, [name, component] {
+    return hbox({
+               text(name) | size(WIDTH, EQUAL, 8),
+               separator(),
+               component->Render() | xflex,
+           }) |
+           xflex;
+  });
+}
 
 // Global variables
 std::string notesFile = "notes.json";
@@ -89,6 +107,20 @@ void viewAllNotes() {
 }
 
 int main() {
+    
+    auto screen = ScreenInteractive::FitComponent();
+    std::string content ="";
+    std::string placeholder = "placeholder";
+    component input = Input(&content, &placeholder);
+    screen.Loop(input);
+
+    Element document = 
+        window(text("Contact"),
+            text("the elemnt") | border | flex,
+        );
+
+
+
     loadNotes();
 
     while (true) {
@@ -118,6 +150,37 @@ int main() {
                 break;
         }
     }
+    
+    auto layout = Container::Vertical({
+      menu,
+      toggle,
+      checkboxes,
+      radiobox,
+      input,
+      sliders,
+      button,
+    });
+
+    auto component = Renderer(layout, [&] {
+    return vbox({
+               menu->Render(),
+               separator(),
+               toggle->Render(),
+               separator(),
+               checkboxes->Render(),
+               separator(),
+               radiobox->Render(),
+               separator(),
+               input->Render(),
+               separator(),
+               sliders->Render(),
+               separator(),
+               button->Render(),
+           }) |
+           xflex | size(WIDTH, GREATER_THAN, 40) | border;
+    });
+
+    screen.Loop(component);
 
     return 0;
 }
